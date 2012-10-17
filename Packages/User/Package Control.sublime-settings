@@ -3,6 +3,7 @@
 	"installed_packages":
 	[
 		"CTags",
+		"DocBlockr",
 		"Package Control",
 		"SublimeLinter",
 		"Theme - Soda"
