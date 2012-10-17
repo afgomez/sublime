@@ -9,6 +9,8 @@
 
   // Themes, color schemes
   "theme": "Soda Light.sublime-theme"
+  // Save files when focus is lost
+  "save_on_focus_lost": true,
   // Interface
   "theme": "Soda Light.sublime-theme",
   "color_scheme": "Packages/Color Scheme - Default/Twilight.tmTheme",
