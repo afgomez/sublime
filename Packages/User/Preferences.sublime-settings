@@ -1,16 +1,17 @@
 // Settings in here override those in "Default/Preferences.sublime-settings", and
 // are overridden in turn by file type specific settings.
 {
-  // The number of spaces a tab is considered equal to
+  // Identation settings
   "tab_size": 2,
-
-  // Set to true to insert spaces when tab is pressed
   "translate_tabs_to_spaces": true,
 
-  // Themes, color schemes
-  "theme": "Soda Light.sublime-theme"
   // Save files when focus is lost
   "save_on_focus_lost": true,
+
+  // Cleanup files
+  "trim_trailing_white_space_on_save": true,
+
+
   // Interface
   "theme": "Soda Light.sublime-theme",
   "color_scheme": "Packages/Color Scheme - Default/Twilight.tmTheme",
