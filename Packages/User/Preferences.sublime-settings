@@ -18,6 +18,8 @@
 
   "highlight_line": true,
 
+  "auto_complete": false,
+
   "font_face": "Envy Code R",
   "font_options": ["subpixel_antialias"],
   "font_size": 13,
