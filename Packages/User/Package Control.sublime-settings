@@ -1,7 +1,8 @@
 {
-	"auto_upgrade_last_run": 1350431674,
+	"auto_upgrade_last_run": 1350507685,
 	"installed_packages":
 	[
+		"CTags",
 		"Package Control",
 		"SublimeLinter",
 		"Theme - Soda"
