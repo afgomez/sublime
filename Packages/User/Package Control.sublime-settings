@@ -1,7 +1,8 @@
 {
-	"auto_upgrade_last_run": 1350507685,
+	"auto_upgrade_last_run": 1350511676,
 	"installed_packages":
 	[
+		"Alignment",
 		"CTags",
 		"DocBlockr",
 		"Package Control",
