@@ -3,6 +3,9 @@
   { "keys": ["super+v"], "command": "paste_and_indent" },
   { "keys": ["super+shift+v"], "command": "paste" },
 
+  // Reindent the whole document
+  { "keys": ["ctrl+shift+r"], "command": "reindent" , "args": {"single_line": false}},
+
   // ERB tags
   { "keys": ["ctrl+shift+."], "command": "erb" }
 ]
