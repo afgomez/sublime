@@ -23,8 +23,10 @@
   "font_size": 13,
 
   "use_simple_full_screen": true,
+  "rulers":[0],
 
   // Behaviours
+  "hot_exit": false,
   "remember_open_files": false,
   "close_windows_when_empty": true
 }
