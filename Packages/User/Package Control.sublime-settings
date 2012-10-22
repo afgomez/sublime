@@ -1,5 +1,5 @@
 {
-	"auto_upgrade_last_run": 1350516281,
+	"auto_upgrade_last_run": 1350895180,
 	"installed_packages":
 	[
 		"AdvancedNewFile",
@@ -7,6 +7,7 @@
 		"CTags",
 		"DocBlockr",
 		"ERB Insert and Toggle Commands",
+		"Git",
 		"Package Control",
 		"SublimeLinter",
 		"Theme - Soda"
