@@ -1,5 +1,5 @@
 {
-	"auto_upgrade_last_run": 1350895180,
+	"auto_upgrade_last_run": 1351243653,
 	"installed_packages":
 	[
 		"AdvancedNewFile",
@@ -9,6 +9,8 @@
 		"ERB Insert and Toggle Commands",
 		"Git",
 		"Package Control",
+		"Sass",
+		"StringEncode",
 		"SublimeLinter",
 		"Theme - Soda"
 	]
