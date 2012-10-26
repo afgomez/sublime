@@ -12,7 +12,7 @@
   "trim_trailing_white_space_on_save": true,
 
   // Interface
-  "theme": "Soda Light.sublime-theme",
+  "theme": "Soda Dark.sublime-theme",
   "color_scheme": "Packages/Color Scheme - Cobalt Alex/Cobalt-alex.tmTheme",
 
   "highlight_line": true,
