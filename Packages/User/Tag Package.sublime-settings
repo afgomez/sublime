@@ -1,0 +1,4 @@
+{
+  // Linting is done via sublimeLinter
+  "enable_live_tag_linting": false
+}
