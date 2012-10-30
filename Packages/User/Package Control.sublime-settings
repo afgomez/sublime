@@ -1,8 +1,7 @@
 {
-	"auto_upgrade_last_run": 1351243653,
+	"auto_upgrade_last_run": 1351588159,
 	"installed_packages":
 	[
-		"AdvancedNewFile",
 		"Alignment",
 		"CTags",
 		"DocBlockr",
