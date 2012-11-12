@@ -1,8 +1,9 @@
 {
-	"auto_upgrade_last_run": 1352109164,
+	"auto_upgrade_last_run": 1352709316,
 	"installed_packages":
 	[
 		"Alignment",
+		"CoffeeScript",
 		"CTags",
 		"DocBlockr",
 		"ERB Insert and Toggle Commands",
