@@ -1,7 +1,8 @@
 {
-	"auto_upgrade_last_run": 1352709316,
+	"auto_upgrade_last_run": 1353058202,
 	"installed_packages":
 	[
+		"AdvancedNewFile",
 		"Alignment",
 		"CoffeeScript",
 		"CTags",
