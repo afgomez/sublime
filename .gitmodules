@@ -1,0 +1,3 @@
+[submodule "Packages/Sass"]
+	path = Packages/Sass
+	url = git@github.com:afgomez/sass-textmate-bundle.git
