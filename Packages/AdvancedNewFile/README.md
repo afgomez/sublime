@@ -6,6 +6,8 @@ Advanced file creation for Sublime Text 2
 This plugin allows for faster file creation within a project. Please see the [Features](https://github.com/skuroda/Sublime-AdvancedNewFile#features) section for more detailed information about advanced features.
 
 ## Installation
+Note with either method, you may need to restart Sublime Text 2 for the plugin to load.
+
 ### Package Control
 Installation through [package control](http://wbond.net/sublime_packages/package_control) is recommended. It will handle updating your packages as they become available. To install, do the following.
 
@@ -46,6 +48,10 @@ The super keys for Linux and OS X are the Windows and command key respectively.
 `alias`: 
 
 A dictionary that contains a set of aliases tied to a directory. For more information, see [Aliases](https://github.com/skuroda/Sublime-AdvancedNewFile#aliases)
+
+`os_specific_alias`:
+
+A dictionary containing a set of aliases tied to a directory. These aliases will be platform specific. For more information, see [Platform Specific Aliases](https://github.com/skuroda/Sublime-AdvancedNewFile#ilatform-specific-aliases)
 
 `default_initial`:
 
@@ -118,6 +124,21 @@ Sample aliases:
 
 To use the above alias, when specifying a new file enter `Desktop:testDir/testFile`, which would then create a file at `<home_directory>/Desktop/testDir/testFile`.
     
+##### Platform Specific Aliases
+You can also create aliases that are platform specific. These follow a similar set of rules as aliases. However, rather than specifying a string path to use, a dictionary is specified. This dictionary may contains the following keys: `windows`, `linux`, and `osx`. The path for this particular alias will be used based on the operating system in use. If the same alias is specified in both `alias` and `os_specific_alias`, the path in `os_specific_alias` will be used.
+
+Sample OS Specific Aliases:
+
+    {
+        "os_specific_alias": {
+            "subl_packages" {
+                "windows": "~\\AppData\\Roaming\\Sublime Text 2\\Packages",
+                "linux": "~/.config/sublime-text-2/Packages",
+                "osx": "~/Library/Application Support/Sublime Text 2/Packages"
+            }
+        }
+    }
+
 ##### Predefined Aliases
 ###### Top level folders in window
 Top level folders can be specified by typing in the name of the folder followed by a colon. Then specify the path as you would normally. 
@@ -126,7 +147,7 @@ Top level folders can be specified by typing in the name of the folder followed 
 To specify the current working directory, simply type a colon, without any preceding text. 
 
 ## Notes
-Thanks to Dima Kukushkin ([xobb1t](https://github.com/xobb1t)) for the original work on this plugin.
+Thanks to Dima Kukushkin ([xobb1t](https://github.com/xobb1t)) for the original work on this plugin. Also, thank you to [facelessuser](https://github.com/facelessuser), and by extension biermeester and matthjes for the idea of platform specific settings.
 
 ### Contributors
 * [xobb1t](https://github.com/xobb1t)

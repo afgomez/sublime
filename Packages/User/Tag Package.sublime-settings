@@ -1,4 +1,7 @@
 {
   // Linting is done via sublimeLinter
-  "enable_live_tag_linting": false
+  "enable_live_tag_linting": false,
+
+  // DON'T close tag on slash, please, please
+  "enable_close_tag_on_slash": false
 }
