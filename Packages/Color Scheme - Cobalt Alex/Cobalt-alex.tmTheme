@@ -327,7 +327,7 @@
 			<key>name</key>
 			<string>css tag-name</string>
 			<key>scope</key>
-			<string>entity.name.tag</string>
+			<string>meta.selector.css entity.name.tag, source.sass entity.name.tag</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
