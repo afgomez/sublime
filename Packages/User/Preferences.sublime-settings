@@ -30,6 +30,9 @@
   // Behaviours
   "hot_exit": false,
   "remember_open_files": false,
-  "close_windows_when_empty": true
+  "close_windows_when_empty": true,
+  "copy_with_empty_selection": false
+
+
 }
 
