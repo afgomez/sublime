@@ -1,5 +1,5 @@
 {
   "rulers": [0, 120],
-  "wordWrap": true,
-  "wrapWidth": 120
+  "word_wrap": true,
+  "wrap_width": 120
 }
