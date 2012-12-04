@@ -1,5 +1,4 @@
 {
-  "rulers": [0, 120],
-  "word_wrap": true,
-  "wrap_width": 120
+  "rulers": [0, 100],
+  "wrap_width": 100
 }
