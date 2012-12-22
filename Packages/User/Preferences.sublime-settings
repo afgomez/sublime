@@ -19,6 +19,7 @@
 
   "highlight_line": true,
   "auto_complete": false,
+  "indent_guide_options": ["draw_active"],
 
   "font_face": "PragmataPro",
   "font_options": ["subpixel_antialias"],
