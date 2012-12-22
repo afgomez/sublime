@@ -37,6 +37,8 @@
   // Exclude bundler and several cache folders (sass, pygments...)
   "folder_exclude_patterns": [".svn", ".git", ".hg", "CVS", "tmp", ".bundle", ".*-cache"],
 
+  "file_exclude_patterns": ["*.pyc", "*.pyo", "*.exe", "*.dll", "*.obj",
+    "*.o", "*.a", "*.lib", "*.so", "*.dylib", "*.ncb", "*.sdf", "*.suo",
+    "*.pdb", "*.idb", ".DS_Store", "*.class", "*.psd", "*.db", ".tags*"]
 
 }
-
