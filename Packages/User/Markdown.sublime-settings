@@ -1,4 +1,4 @@
 {
-  "rulers": [0, 100],
-  "wrap_width": 100
+  "rulers": [-1, 71],
+  "match_header_hashes": true
 }
