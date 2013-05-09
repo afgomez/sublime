@@ -1,4 +1,5 @@
 {
-  "rulers": [-1, 71],
-  "match_header_hashes": true
+  "rulers": [0, 71],
+  "match_header_hashes": true,
+  "font_face": "PragmataPro"
 }
