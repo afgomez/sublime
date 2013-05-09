@@ -564,8 +564,6 @@
 			<dict>
 				<key>background</key>
 				<string>#FF4A52</string>
-				<key>foreground</key>
-				<string>#FFFFFF</string>
 			</dict>
 		</dict>
 		<dict>
@@ -588,8 +586,6 @@
 			<dict>
 				<key>background</key>
 				<string>#DF9400</string>
-				<key>foreground</key>
-				<string>#FFFFFF</string>
 			</dict>
 		</dict>
 		<dict>
@@ -612,8 +608,6 @@
 			<dict>
 				<key>background</key>
 				<string>#ffffff33</string>
-				<key>foreground</key>
-				<string>#FFFFFF</string>
 			</dict>
 		</dict>
 		<dict>
