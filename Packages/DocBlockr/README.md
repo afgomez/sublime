@@ -12,6 +12,15 @@ You can leave either of these things [here][issues]. Pull requests are welcomed 
 
 ## Changelog ##
 
+- **v2.10.1**, *19 April 2013*
+  - Adds variable substitution in `jsdocs_extra_tags`
+  - Fixes indentation bug in `jsdocs_extra_tags`
+  - Fixes bug when adding a new line after a docblock which contains text afterwards
+  - Fixes link to Pledgie (thanks @Krinkle)
+- **v2.10.0**, *21 February 2013*
+  - Adds Sublime Text 3 support (thanks to @lxe and @rmarscher)
+  - YUI-style `@method` tags can be automatically added with the `jsdocs_autoadd_method_tag` setting (thanks to @maheshjag)
+  - Variables starting with `$` are not wiped out when reparsing a docblock (thanks @ryrun)
 - **v2.9.3**, *12 December 2012*
   - Fixed bug which stopped regular comments from closing automatically
 - **v2.9.2**, *11 December 2012*
@@ -19,20 +28,6 @@ You can leave either of these things [here][issues]. Pull requests are welcomed 
     - Structure of the modules greatly improved
     - Fixes bug with matching languages with hyphens in the name
   - Adds support for CUDA-C++
-- **v2.9.1**, *31 October 2012*
-  - Thanks to [wronex](https://github.com/wronex), <kbd>Alt+Q</kbd> will reformat the entire DocBlock, with customisable indentation.
-  - Thanks to [Pavel Voronin](https://github.com/pavel-voronin), spaces around arguments are handled properly.
-  - **C/C++**: Array arguments are accepted
-  - **C/C++**: An argument list containing only `void` doesn't output any `@param` tags
-  - **PHP**: Arguments with an array as a default value inside multi-line arguments are handled properly
-  - <kbd>Ctrl/Cmd + Enter</kbd> and <kbd>Ctrl/Cmd + Shift + Enter</kbd> work inside DocBlocks.
-- **v2.9.0**, *1 October 2012*
-  - Adds ObjectiveC and ObjectiveC++ support, thanks to some help from [Robb Böhnke](https://github.com/robb)
-    - Very buggy code, support isn't great but it's better than nothing (hopefully).
-  - Single-line comments inside function definitions are handled
-  - Notation rules are applied to functions, which means they can define a return type by their name, eg: `strFoo`
-  - Notation rules can define arbitrary tags, for example: functions with a prefix of "_" should get the `@private` tag.
-  - Given the above addition, JS functions starting with an underscore are no longer marked as `@private` by default.
 
 Older history can be found in [the history file](https://github.com/spadgos/sublime-jsdocs/blob/master/HISTORY.md).
 
@@ -323,7 +318,7 @@ You can access the configuration settings by selecting `Preferences -> Package S
 
 - `jsdocs_extra_tags` *(Array.String)* An array of strings, each representing extra boilerplate comments to add to *functions*. These can also include arbitrary text (not just tags).
 
-        // jsdocs_extra_tags = ['This is a cool function', '@author nickf', '@version ${1:version}']
+        // jsdocs_extra_tags = ['This is a cool function', '@author nickf', '@version ${1:[version]}']
         /**<<enter>>
         function foo (x) {}
 
@@ -337,6 +332,19 @@ You can access the configuration settings by selecting `Preferences -> Package S
          */
         function foo (x) {}
 
+    Basic variable substitution is supported here for the variables `date` and `datetime`, wrapped in double curly brackets.
+
+        // jsdocs_extra_tags = ['@date {{date}}', '@anotherdate {{datetime}}']
+        /**<<enter>>
+        function foo() {}
+
+        /**
+         * [foo description]
+         * @date     2013-03-25
+         * @datetime 2013-03-25T21:16:25+0100
+         * @return   {[type]}
+         */
+
 - `jsdocs_extend_double_slash` *(Boolean)* Whether double-slash comments should be extended. An example of this feature is described above.
 
 - `jsdocs_deep_indent` *(Boolean)* Whether pressing tab at the start of a line in docblock should indent to match the previous line's description field. An example of this feature is described above.
@@ -349,11 +357,13 @@ You can access the configuration settings by selecting `Preferences -> Package S
 
 - `jsdocs_indentation_spaces_same_para` *(Number)* Described above in the *Reformatting paragraphs* section. Default: `1`
 
+- `jsdocs_autoadd_method_tag` *(Boolean)* Add a `@method` tag to docblocks of functions. Default: `false`
+
 This is my first package for Sublime Text, and the first time I've written any Python, so I heartily welcome feedback and [feature requests or bug reports][issues].
 
 ## Show your love ##
 
-[![Click here to lend your support to: DocBlockr and make a donation at www.pledgie.com !](https://www.pledgie.com/campaigns/16316.png?skin_name=chrome)](http://www.pledgie.com/campaigns/16316)
+[![Click here to lend your support to: DocBlockr and make a donation at pledgie.com!](https://pledgie.com/campaigns/16316.png?skin_name=chrome)](http://pledgie.com/campaigns/16316)
 
 [closure]: http://code.google.com/closure/compiler/docs/js-for-compiler.html
 [issues]: https://github.com/spadgos/sublime-jsdocs/issues

@@ -13,9 +13,9 @@ class StringEncode(sublime_plugin.TextCommand):
         regions = [region for region in self.view.sel()]
 
         # sort by region.end() DESC
-        def compare(region_a, region_b):
-            return cmp(region_b.end(), region_a.end())
-        regions.sort(compare)
+        def get_end(region):
+            return region.end()
+        regions.sort(key=get_end, reverse=True)
 
         for region in regions:
             if region.empty():
@@ -100,7 +100,13 @@ class XmlEntitizeCommand(StringEncode):
         for k in xml_escape_table:
             v = xml_escape_table[k]
             text = text.replace(k, v)
-        return text
+        ret = ''
+        for i, c in enumerate(text):
+            if ord(c) > 127:
+                ret += hex(ord(c)).replace('0x', '&#x') + ';'
+            else:
+                ret += c
+        return ret
 
 
 class XmlDeentitizeCommand(StringEncode):
