@@ -26,7 +26,8 @@
   "font_size": 13,
 
   "use_simple_full_screen": true,
-  "rulers": [0],
+  "rulers": [80],
+  "margin": 0,
 
   // Behaviours
   "hot_exit": false,
