@@ -12,6 +12,9 @@
   "trim_trailing_white_space_on_save": true,
   "ensure_newline_at_eof_on_save": true,
 
+  // Word separators. Remove hypen '-' from the default list to match CSS selectors
+  "word_separators": "./\\()\"':,.;<>~!@#$%^&*|+=[]{}`~?",
+
   // Interface
   "theme": "Soda Dark.sublime-theme",
   "soda_classic_tabs": true,
